@@ -4,7 +4,6 @@ package main
 import (
 	"fmt"
 	"os"
-	"strings"
 	"time"
 )
 
@@ -16,5 +15,5 @@ func main() {
 		sep = " "
 	}
 	fmt.Println(s)
-	fmt.Printf("%.2fs elapsed\n", time.Since(start).Seconds())
+	fmt.Printf("%dus elapsed\n", time.Since(start).Microseconds())
 }

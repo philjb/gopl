@@ -11,5 +11,5 @@ import (
 func main() {
 	start := time.Now()
 	fmt.Println(strings.Join(os.Args[1:], " "))
-	fmt.Printf("%.2fs elapsed\n", time.Since(start).Seconds())
+	fmt.Printf("%dus elapsed\n", time.Since(start).Microseconds())
 }
